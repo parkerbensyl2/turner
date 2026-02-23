@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples of My Work | Animatronics Warehouse</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="overflow-x-hidden">
+
+    <nav class="w-full fixed px-5 lg:px-8 lg:px-[8%] pt-1 pb-2 flex items-center justify-between z-50">
+            <img src="logo.png" alt="Logo" class="w-20 cursor-pointer mt-2 mr-14">
+            <ul class="hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ml-12
+             bg-[#F30004] shadow-sm">
+                <li><a href="index.html#top">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="https://www.ebay.com/usr/jnt9000">Shop</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> 
+            </ul>
+            
+            <a href="#contact" id="contactbutton"
+            class="hidden lg:flex items-center gap-3 
+            px-10 py-2.5 border border-[#F30004] rounded-full ml-4">Contact
+            <img src="contact.png" alt="email" class="w-4">
+            </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="menu.png" alt="" class="w-8"> 
+            </button>
+        </nav>
+       <!---MOBILE---> 
+            <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
+            -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-[#F30004] transition duration-500">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="close.png" alt="" class="w-8">
+            </div>
+
+                <li><a href="index.html#top" onclick="closeMenu()" >Home</a></li>
+                <li><a href="index.html#about" onclick="closeMenu()" >About</a></li>
+                <li><a href="index.html#services" onclick="closeMenu()" >Services</a></li>
+                <li><a href="https://www.ebay.com/usr/jnt9000" onclick="closeMenu()" >Shop</a></li>
+                <li><a href="portfolio.html" onclick="closeMenu()" >Portfolio</a></li> 
+            </ul>
+
+    <!-- PAGE HEADER -->
+    <section class="pt-28 pb-16 text-center">
+      <h1 class="text-4xl md:text-6xl mb-4">Examples of My Work</h1>
+      <p class="max-w-2xl mx-auto text-sm md:text-base">
+        A selection of restoration projects, custom builds, and detailed animatronic work.
+      </p>
+    </section>
+
+<!-- GALLERY -->
+<section class="px-6 md:px-16 pb-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Gallery Item -->
+    <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="looneybird.png"
+          alt="Rock-afire Explosion Restoration"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Looney Bird</h3>
+      <p class="text-sm opacity-80">
+        Looney Bird mask painted
+      </p>
+    </div>
+
+   <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="choochoo.png"
+          alt="Animatronic Mask Repaint"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Choo Choo</h3>
+      <p class="text-sm opacity-80">
+        Choo Choo mask painted
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="fatz.png"
+          alt="Fatz Animatronic"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Fatz Animatronic</h3>
+      <p class="text-sm opacity-80">
+        Fatz animatronic fully mechanically and cosmetically restored. Mask and fur are brand new. Organ has brand new front.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="looneybirdani.png"
+          alt="Looney Bird Animatronic"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Looney Bird Animatronic</h3>
+      <p class="text-sm opacity-80">
+       Mechanically fully restored Looney Bird with brand new fur, feathers, leaves, and mask.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="dookmask.png"
+          alt="Rock-afire Explosion Restoration"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Dook Mask</h3>
+      <p class="text-sm opacity-80">
+        Dook mask painted and furred using brand new head fur.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="fatzmask.png"
+          alt="Rock-afire Explosion Restoration"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Fatz</h3>
+      <p class="text-sm opacity-80">
+        Fatz mask painted and furred using the original head fur. Done for Aaron Fechter.
+      </p>
+    </div>
+
+     <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="fair.png"
+          alt="Rock-afire Explosion Restoration"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Fatz</h3>
+      <p class="text-sm opacity-80">
+        Mechanically and cosmetically restored with new masks, hands, and feet. Displayed at the Santa Clara Maker Faire 2019.
+      </p>
+    </div>
+
+     <div class="flex flex-col gap-3 text-center">
+      <div class="rounded-xl overflow-hidden shadow-md mx-auto aspect-[4/3] max-w-xs">
+        <img
+          src="masks.png"
+          alt="Rock-afire Explosion Restoration"
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h3 class="text-lg font-semibold">Rolfe, Dook, Mitzi masks</h3>
+      <p class="text-sm opacity-80">
+        Batch of five masks painted.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- FIXED CONTACT BAR (same as main site) -->
+    <footer id="contact-bar" class="fixed bottom-0 left-0 w-full bg-[#F30004] z-50">
+  <div class="flex items-center justify-between px-8 py-2 text-white">
+    
+    <p class="text-sm">
+      © 2026 Animatronics Warehouse
+    </p>
+
+    <div class="flex items-center gap-4">
+      <a href="https://www.instagram.com/animatronicswarehouse/" target="_blank">
+        <img src="instagram-white.png" alt="Instagram" class="w-5 hover:scale-110 transition">
+      </a>
+
+      <a href="https://www.youtube.com/@animatronicswarehouse/featured" target="_blank">
+        <img src="youtube-white.png" alt="YouTube" class="w-5 hover:scale-110 transition">
+      </a>
+
+      <a href="mailto:youremail@example.com">
+        <img src="contact-white.png" alt="Email" class="w-5 hover:scale-110 transition">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  </body>
+</html>

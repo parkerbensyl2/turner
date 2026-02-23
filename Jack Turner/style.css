@@ -1,0 +1,85 @@
+/* GENERAL */
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+nav {
+color: white;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+}
+
+#mybutton {
+  background-color: #EF6A05;
+  color: white;
+  font-weight: 600;
+  border: none;
+
+}
+
+#contactbutton {
+  color: black
+}
+
+#sideMenu {
+  color: white;
+}
+
+#aboutmeheading {
+  font-weight: 500;
+}
+
+#about p{
+  font-size: .9rem;
+  line-height: 1.4rem;
+
+}
+
+#services h2 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+      /* Styles for screens smaller than 768px */
+      #about p {
+          text-align: center;
+
+      }}
+
+      #services {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+      }
+
+      #stage{
+        width: 75%;
+      }
+
+:root {
+  --footer-height: 72px;
+}
+
+/* Prevent content from hiding behind fixed footer */
+body {
+  padding-bottom: calc(var(--footer-height) + 2rem);
+}
+
+/* Desktop breathing room */
+@media (min-width: 768px) {
+  body {
+    padding-bottom: calc(var(--footer-height) + .75rem);
+  }
+}
+
+
+
